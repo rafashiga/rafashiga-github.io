@@ -23,3 +23,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+
+// sticky navbar
+let mainNavLinks = document.querySelectorAll(".navbar-end a");
+let mainSections = document.querySelectorAll("main section");
+
+let lastId;
+let cur = [];
+
+window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+
+        console.log(fromTop)
+
+        if (fromTop === 0) {
+            document.querySelector(".navbar").classList.remove("navbar-shadow");
+        } else {
+            document.querySelector(".navbar").classList.add("navbar-shadow");
+        }
+
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+        ) {
+            link.classList.add("is-active");
+        } else {
+            link.classList.remove("is-active");
+        }
+    });
+});
