@@ -189,12 +189,21 @@ a.navbar-item:hover {
 /* -------------------
     * footer
 ----------------------*/
-footer .column {
+.footer {
+    padding: 50px;
+    min-height: 50px;
+}
+
+.footer__one .column {
     min-height: 160px;
 }
 
-footer .footer__brand {
+.footer__one .footer__brand {
     min-height: 10px;
+}
+
+.footer__two {
+    margin-top: 40px;
 }
 
 /* -----------------------
