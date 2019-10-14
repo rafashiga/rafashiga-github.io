@@ -38,8 +38,6 @@ window.addEventListener("scroll", event => {
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
 
-        console.log(fromTop)
-
         if (fromTop === 0) {
             document.querySelector(".navbar").classList.remove("navbar-shadow");
         } else {

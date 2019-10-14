@@ -12,7 +12,7 @@ header {
     border-bottom: 5px solid #fff;
 }
 
-.navbar-brand .navbar-item{
+.navbar-brand .navbar-item {
     margin: 0;
     color: #00D1B2;
 }
@@ -92,32 +92,34 @@ a.navbar-item:hover {
     * hero
 ---------------------*/
 .hero {
-    height: 100vh;
+    height: 710px;
     background-color: #FFFFFF;
 }
 
+.hero__image {
+    margin: 0 auto;
+}
 
 .hero__image img {
-    position: absolute;
-    bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    height: 360px;
+    height: 391px;
     object-fit: cover;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
+    .hero {
+        height: 610px;
+    }
+
     .hero__image img {
-        height: 300px;
+        height: 321px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .hero__image img {
-        height: 600px;
-    }
+
 }
 
 /* --------------------------
