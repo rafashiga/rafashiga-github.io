@@ -1,3 +1,6 @@
+:root {
+    --color-primary: #00b79c;
+}
 
 /* ----------------
     * navbar
@@ -14,11 +17,11 @@ header {
 
 .navbar-brand .navbar-item {
     margin: 0;
-    color: #00D1B2;
+    color: var(--color-primary);
 }
 
 .navbar-brand a:hover {
-    color: #00D1B2 !important;
+    color: var(--color-primary) !important;
 }
 
 
@@ -40,17 +43,17 @@ header {
 
 .navbar-item:hover {
     background-color: #fff !important;
-    border-bottom: 5px solid #00D1B2;
+    border-bottom: 5px solid var(--color-primary);
 }
 
 .navbar-item.is-active {
     padding: 0;
     font-weight: 900;
-    border-bottom: 5px solid #00D1B2 !important;
+    border-bottom: 5px solid var(--color-primary) !important;
 }
 
 a.navbar-item:hover {
-    color: #00D1B2;
+    color: var(--color-primary);
 }
 
 .navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
@@ -78,7 +81,7 @@ a.navbar-item:hover {
 
     .navbar-item.is-active {
         font-weight: 900;
-        color: #00D1B2 !important;
+        color: var(--color-primary) !important;
         border-bottom: none !important;
     }
 
@@ -219,3 +222,13 @@ footer .footer__brand {
 .grow { transition: all .5s ease-in-out; }
 .grow:hover { transform: scale(1.06); }
 
+
+/* * others */
+
+.has-background-primary {
+    background: var(--color-primary) !important;
+}
+
+.has-text-primary {
+    color: var(--color-primary) !important;
+}
