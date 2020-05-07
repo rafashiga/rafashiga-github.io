@@ -1,11 +1,12 @@
 <h1 align="center">
   :rocket:
   <br>
+  <br>
   Shiga Projects v1
 </h1>
 
 <h3 align="center">
-<strong>Showcase of my projects - v1</strong>
+<strong>Version 1: Showcase of my projects. <a href="https://rafashiga.github.io/shiga-projects-v1/">site</a></strong>
 </h3>
 
 <p align="center">
